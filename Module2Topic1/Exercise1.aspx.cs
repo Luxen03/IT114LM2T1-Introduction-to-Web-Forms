@@ -13,5 +13,8 @@ namespace Module1Exercise1
         {
 
         }
+        protected void Play(object sender, EventArgs e) {
+            span.InnerHtml = "Now playing Between Two Worlds";
+        }
     }
 }

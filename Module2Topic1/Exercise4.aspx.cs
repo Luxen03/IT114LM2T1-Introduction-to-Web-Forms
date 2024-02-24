@@ -11,7 +11,10 @@ namespace Module1Exercise1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
+        }
+        protected void Submit(object sender, EventArgs e) {
+            result.Text = $"Name: {fullName.Text}\nAge: {age.Text}\nEmail: {confirmEmail.Text}";
         }
     }
 }
